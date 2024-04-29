@@ -21,7 +21,7 @@ header{
     background-color: black;
 }
 
-nav ul{
+.pagenav{
     display: flex;
     margin: 0;
     padding: 0;
@@ -61,6 +61,10 @@ h2{
     margin: 0;
 }
 
+h3{
+    color: rgb(64, 173, 224);
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,7 +81,72 @@ main{
     gap: 5%;
 }
 
-section{
+.Tutorial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    gap: 2%;
+    overflow: auto;
+}
+
+.Tutorial h2{
+    grid-column: 1/4;
+}
+
+.Tutorial h3{
+    text-align: center;
+    font-size: x-large;
+}
+
+.Tutorial section{
+    height: 30vh;
+    width: 25vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+}
+
+.alt{
+    margin: 0;
+    height: 97vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 80px 40px auto 30px;
+    grid-template-columns: 15vw auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "sidenav"
+    "main"
+    "footer";
+    background-color: black;
+}
+
+.toppnav{
+    grid-area: nav;
+    grid-column: 1/3;
+}
+
+.Tutorialmain{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 85vw;
+    grid-template-rows: 20vh auto;
+    margin: 0;
+}
+
+.Tutorialmain section{ 
+    grid-column: 1/3;
+    max-width: 85vw;
+}
+
+.sidenav{
+    grid-row: 3/4;
+}
+
+.altmain section{
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 30px auto 40px;
@@ -87,8 +156,10 @@ section{
     grid-column: 1/3;
     max-width: 98vw;
     height: 33vw;
+    background-color: rgb(36, 36, 36);
     grid-row: 1;
     padding: 0;
+    border: 0;
 }
 
 img{
