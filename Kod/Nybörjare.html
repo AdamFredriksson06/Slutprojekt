@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <title>AIcentralen</title>
+        <title>Nybörjare</title>
         <meta charset="utf-8">
         <link href="Style.css" rel="stylesheet" >
     </head>
@@ -10,7 +10,7 @@
             <h1><a href="Index.html">AIcentralen</a></h1>
         </header>
         <nav class="toppnav">
-            <ul class="pagenav">
+            <ul>
                 <li><a href="Historia.html">Histora</a></li>
                 <li><a href="Nyheter.html">Nyheter</a></li>
                 <li><a href="Tutorial.html">Tutorials</a></li>
@@ -54,19 +54,36 @@
             <p>Nu ska du få fördjupa dig i AIns historia, till att börja med kan du läsa AIcentralens historia sida. Efter det kan du leta vidare efter information på internet.
                 Du kan också testa fråga en AI om dens egen historia. Detta är viktigt för att få lite bakgrundsfakta kring artificiell intelligens,
                  vilket du kommer behöva i framtiden när du ska göra mer avancerade saker. </p>
-
+            <form action="Tacksida.html">
+                <h4>Uppgifter</h4>
+                <p>Gör följande uppgifter:</p>
+                <p>1. När kom den första AI:n?</p>
+                <input type="text" name="AI">
+                <p>2. Vem/Vilka är viktiga personer inom AI historia?</p>
+                <input type="checkbox" name="Andrew"id="1">
+                <label for="1">Andrew Garfield</label>
+                <input type="checkbox" name="Sam"id="2">
+                <label for="2">Sam Altman</label>
+                <input type="checkbox" name="Martin"id="3">
+                <label for="3">Martin Beck</label>
+                <p>3. Sammanfatta  AI:ns historia på 4 meningar</p>
+                <input type="textarea" name="sammanfattning" id="4">
+                <p>Skriv nu in ditt lösenord för att kunna skicka in svaren</p>
+                <input type="password" name="lösenord" id="5">
+                <input type="submit" value="Lämna in">
+            
+            </form>
             <h3 id="div4">Lektion 4</h3>
             <p>Välkommen till den sista lektionen som nybörjare. Idag så ska du kolla på filmklippet nedan. Det kommer att ge dig väldigt användbar 
                 information inför framtiden så se till att lyssna noga.</p>
-            <iframe src="https://www.youtube.com/embed/-J3YJxNnzDc?si=it15xIEbKr_U_k4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>Vad du bör ha lärt dig:</h3>
+            <iframe src="https://www.youtube.com/embed/-J3YJxNnzDc?si=it15xIEbKr_U_k4N" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Detviktigaste du bör ha lärt dig idag:</h3>
             <ol>
-                <li><p>Chat-gpt3s begränsnignar</p></li>
-                <li><p>Hur man kan förbättra sin vardag med AI</p></li>
-                <li><p>Lite om AIns historia</p></li>
+                <li><p>1. Chat-gpt3s begränsnignar</p></li>
+                <li><p>2. Hur man kan förbättra sin vardag med AI</p></li>
+                <li><p>3. Lite om AIns historia</p></li>
             </ol>
         </main>
-        <footer>
-             AIcentralen all rights reserved
+        <footer> <p>AIcentralen all rights reserved</p>
         </footer>
     </body>

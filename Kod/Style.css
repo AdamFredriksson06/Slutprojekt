@@ -1,6 +1,5 @@
 /*Body*/
-
-.wrapper{
+body{
     margin: 0;
     height: 97vh;
     width: 100vw;
@@ -11,32 +10,14 @@
     "nav"
     "main"
     "footer";
-    background-color: black;
-}
-
-body{
     background-color: black;
 }
 
 .alt{
-    margin: 0;
-    height: 97vh;
-    width: 100vw;
-    display: grid;
-    grid-template-rows: 80px 40px auto 30px;
     grid-template-columns: 15vw auto;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "sidenav"
-    "main"
-    "footer";
-    background-color: black;
 }
 
 /* HEADER*/
-
-
 header{
     grid-area: "header";
     background-color: black;
@@ -47,10 +28,11 @@ header{
 }
 
 /*NAV*/
-.pagenav{
-    display: flex;
+
+ul{
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .toppnav{
@@ -95,10 +77,10 @@ main{
 }
 
 .Tutorialmain{
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     overflow: auto;
     display: grid;
-    grid-template-rows: 20vh auto;
+    grid-template-rows: 20vh 60px auto;
     margin: 0;
     padding: 5px;
 }
@@ -119,7 +101,7 @@ h2{
     text-align: center;
     padding: 3px;
     color: rgb(64, 173, 224);
-    font-size: 350%;
+    font-size: 3em;
     margin: 0;
     font-family: Myfont, tahoma, sans-serif;
 }
@@ -150,7 +132,8 @@ h3{
 }
 
 /*Text*/
-.nyhetstext{
+
+footer p, .nyhetstext{
     text-align: center;
 }
 
@@ -175,18 +158,11 @@ p{
     margin-right: 5%;
 }
 
-.Tutorialmain section{ 
-    grid-column: 1/3;
-    max-width: 85vw;
-}
-
 .altmain section{
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 30px auto 40px;
 }
-
-textarea
 
 section{
     border: 2px white solid;
@@ -200,7 +176,6 @@ li{
     list-style: none;
     background-color: black;
     text-align: center;
-    height: 40px;
     font-family: Myfont, tahoma, sans-serif;
 }
 
@@ -220,6 +195,10 @@ li{
     font-family: Myfont, tahoma, sans-serif;
 }
 
+li:hover{
+    background-color: #808080;
+}
+
 /*LÄNKAR*/
 a{
     text-decoration: none;
@@ -236,6 +215,11 @@ table{
 }
 
 /*bilder/video*/
+
+#bild{
+    max-width: 30vw;
+}
+
 .kontakt img{
     padding: 0;
     margin: auto;
@@ -248,14 +232,11 @@ iframe{
     height: 425px;
 }
 
-textarea
-
 .bakgrund{
     grid-column: 1/3;
     max-width: 98vw;
     height: 33vw;
     background-color: rgb(36, 36, 36);
-    grid-row: 1;
     padding: 0;
     border: 0;
 }
@@ -275,6 +256,8 @@ form{
     color: rgb(64, 173, 224);
     font-family: Myfont, tahoma, sans-serif;
 }
+
+/*Footer*/
 
  /*typsnitt*/
 @font-face{
