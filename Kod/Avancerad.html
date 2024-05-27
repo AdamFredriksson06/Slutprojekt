@@ -5,11 +5,11 @@
         <meta charset="utf-8">
         <link href="Style.css" rel="stylesheet" >
     </head>
-    <body class="alt">
+    <body class="alt">  <!--Klass för att använda en body grid med plats för sidonav-->
         <header>
             <h1><a href="Index.html">AIcentralen</a></h1>
         </header>
-        <nav class="toppnav">
+        <nav class="toppnav"> <!--huvudnavigation-->
             <ul>
                 <li><a href="Historia.html">Histora</a></li>
                 <li><a href="Nyheter.html">Nyheter</a></li>
@@ -17,8 +17,8 @@
                 <li><a href="Kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-        <nav class="sidenav">
-            <ul class="lokalmeny"><!--Lokalmeny, länkar till divarna längre ned på sidan genom spec id--> 
+        <nav class="sidenav"> <!--sidonavigation, länkar till rubrikerna längre ned på sidan genom spec id -->
+            <ul>
                 <li> <a href="#div1">Lektion 1</a></li>
                 <li> <a href="#div2">Lektion 2</a></li>
                 <li> <a href="#div3">Lektion 3</a></li>
@@ -32,13 +32,16 @@
             <p>Välkommen till den avancerade nivån, här kommer du att få lära dig hur man på absolut bästa sätt implementerar en AI i en applikation eller i livet.
                 Den första lektionen kommer att gå ut på att du ska hitta en AI som kan lösa ett världsproblem, som till exempel hunger, krig eller något annat allvarligt. 
                 Du ska inte direkt lösa problemet men du ska kunna redogöra för hur man skulle kunna göra det. Detta gör vi för att visa hur pass användbara AIs är. Och här på AIcentralen tror vi på
-                att man lär sig bäst själv. Skriv in ditt telefon nummer nedan så kommer vi att ringa dig inom 2 dagar, när vi ringer ska du redovisa uppgiften.
+                att man lär sig bäst själv. Skriv in ditt telefon nummer nedan så kommer vi att ringa dig inom 2 dagar, när vi ringer ska du redovisa uppgiften. Medans du väntar kan du kolla på den väldigt underhållande videon nedanför
             </p>
             <form action="Tacksida.html"> <!--Skickar användaren till en tacksida-->
                 <label for="telefon">Skriv in ditt telefon nummer:</label>
-                <input type="tel" name="telefon" id="telefon">
-                <input type="submit" value="skicka in">
+                <input type="tel" name="telefon" id="telefon"> <!--skapar ett textfält där man kan skriva in sitt telefonnummer-->
+                <input type="submit" value="skicka in">  <!--knapp för att skicka in sitt svar-->
             </form>
+            <video controls> <!--video elementet används för att integrera en video på sidan-->
+                <source src="video/videoplayback.mp4"> 
+            </video>
             <h3 id="div2">Lekiton 2</h3>
             <p>Lektion 2 går ut på att du ska skapa den AI som du skrev om i förra uppgiften, denna uppgift är svår och kommer att ta lite tid. Du kommer att behöva söka information på internet
                 eftersom vi inte har nog för att lösa en sådanhär uppgift. Om några år när du har kodat klart AIn så ska du gå vidare till nästa uppgift

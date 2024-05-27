@@ -1,5 +1,5 @@
 /*Body*/
-body{
+body{  /*grid för de flesta sidorna*/
     margin: 0;
     height: 97vh;
     width: 100vw;
@@ -13,7 +13,7 @@ body{
     background-color: black;
 }
 
-.alt{
+.alt{  /*Alternativ body grid för att få in en sidonavigation*/
     grid-template-columns: 15vw auto;
 }
 
@@ -23,63 +23,58 @@ header{
     background-color: black;
 }
 
-.alt header{
+.alt header{  /*för att placera headern rätt på nybörjrar och avancerad sidorna*/
     grid-column: 1/3;
 }
 
 /*NAV*/
 
-ul{
+ul{  
     margin: 0;
     padding: 0;
-    display: flex;
+    display: flex;  /*för att objekten ska placeras eftervarandra i sidled*/
 }
 
-.toppnav{
+.toppnav{ /*en klass för att placera navigationen rätt på nybörjar och avancerad sidorna */ 
     grid-area: nav;
-    grid-column: 1/3;
+    grid-column: 1/3; /*för att placera naven rätt*/ 
     font-family: Myfont, tahoma, sans-serif;
 }
 
-.sidenav{
-    grid-row: 3/4;
-    background-color: rgb(22, 22, 22);
+.sidenav{ /*klass för att skilja på vanliga navigationen och sidonavigationen*/
+    grid-row: 3/4; /*placerar den rätt på sidan*/
+    background-color: rgb(22, 22, 22); /*bakgrundsfärg*/
 }
 
 /*MAIN*/
-.kontakt{
+.kontakt{ /*för alternativ layput på kontakt sidan*/
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30vh 20vh;
+    grid-template-rows: 20vh 40vh;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 33vw 60px auto 20vh;
-    overflow: auto;
+main{ /*grund grid*/
+    display: grid; /*för att presentera innehållet i en grid*/
+    grid-template-columns: 1fr 1fr; /*bestämmer hur många kolumner det ska vara*/
+    grid-template-rows: 33vw 60px auto 20vh; /*bestämmer antalet rader*/
+    overflow: auto; /*om sidan är större än skärmen kommer en scroll att dyka upp*/
     padding: 0;
 }
 
-.altmain{
-    display: grid;
+.altmain{ /*alternativ layout för nyhetssidan*/
     grid-template-columns: 0.5fr 2fr 0.5fr;
     grid-template-rows: 100px auto auto 100px;
     background-color: black;
-    gap: 5%;
+    gap: 5%; /*mellanrum mellan rutorna i griden*/
 }
 
-.Tutorial{
-    display: grid;
+.Tutorial{ /*för alternativ layout på tutorial sidan*/
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px;
     gap: 2%;
-    overflow: auto;
 }
 
-.Tutorialmain{
+.Tutorialmain{ /*alternativ layout för nybörjar och avancerad sidorna */
     grid-template-columns: 100%;
-    overflow: auto;
-    display: grid;
     grid-template-rows: 20vh 60px auto;
     margin: 0;
     padding: 5px;
@@ -93,17 +88,17 @@ h1{
     font-family: Myfont, tahoma, sans-serif;
 }
 
-.altmain h2{
+.altmain h2{  /*för att placera h2 ,som ligger i altmain ,rätt*/
     grid-column: 2/3;
 }
 
 h2{
-    text-align: center;
-    padding: 3px;
-    color: rgb(64, 173, 224);
-    font-size: 3em;
-    margin: 0;
-    font-family: Myfont, tahoma, sans-serif;
+    text-align: center; /*centrerar texten*/
+    padding: 3px; /*padding utökar elementets storlek*/
+    color: rgb(64, 173, 224);  /*bestämmer text färg*/
+    font-size: 3em; /*font size betsämmer storlek på text*/
+    margin: 0; /*margin gör elemntet större men lägger på det utanför elementet medans padding gör det innanför*/
+    font-family: Myfont, tahoma, sans-serif; /*font family bestämmer typsnittet på texten, man börjar med ett anvancerat, om det misslyckas kommer webbläsaren att läsa in nästa istället, man avslutar med ett väldigt grundläggande typsnitt*/
 }
 
 h3{
@@ -111,11 +106,11 @@ h3{
     font-family: Myfont, tahoma, sans-serif;
 }
 
-.kontakt h2{
+.kontakt h2{ /*för att placera h2 rätt på kontakt sidan*/
     grid-column: 1/3;
 }
 
-.Tutorial h2{
+.Tutorial h2{ /*för att placera h2 rätt på tutorialsidan*/
     grid-column: 1/4;
 }
 
@@ -124,7 +119,7 @@ h3{
     font-size: x-large;
 }
 
-.nyhetstitel{
+.nyhetstitel{ /*klass för alternativ text design/storlek*/
     text-align: center;
     color: rgb(64, 173, 224);
     font-size: x-large;
@@ -133,7 +128,7 @@ h3{
 
 /*Text*/
 
-footer p, .nyhetstext{
+footer p, .nyhetstext{ /*för att båda nyhetstexten och texten i footern ska vara centrerad*/
     text-align: center;
 }
 
@@ -146,7 +141,7 @@ p{
 }
 
 /*Sections*/
-.Tutorial section{
+.Tutorial section{ /*klass för atlernativ design på sectionen på tutorial sidan*/
     height: 30vh;
     width: 25vw;
     text-align: center;
@@ -154,25 +149,31 @@ p{
     margin-top: 0;
 }
 
-.kontakt section{
+.kontakt section{ /*för att få ut den lite mer åt vänster*/
     margin-right: 5%;
 }
 
-.altmain section{
+.altmain section{ /*simpel grid för nyhetsrutorna*/
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 30px auto 40px;
+    grid-template-rows: 30px auto 70px;
 }
 
-section{
+section{ /*för att alla sections ska ha en vit kant*/
     border: 2px white solid;
     border-radius: 5px;
 }
 
+/*video*/
+video{
+    width: 400px;
+}
+
+
 /*LISTOR*/
-li{
-    display: grid;
-    width: 25%;
+li{  
+    display: grid; /*för att hela ytan ska bli klickbar*/
+    width: 25%; /*gör så att de fura elementen tillsammans tar upp hela skärmbredden*/
     list-style: none;
     background-color: black;
     text-align: center;
@@ -195,7 +196,7 @@ li{
     font-family: Myfont, tahoma, sans-serif;
 }
 
-li:hover{
+li:hover{ /*gör så att li blir grå när man har musen över den*/
     background-color: #808080;
 }
 
@@ -209,14 +210,15 @@ a{
 
 /*Tabeller*/
 table{
+    border-collapse: collapse;
     font-family: Myfont, tahoma, sans-serif;
     color: rgb(64, 173, 224);
-    grid-row: 4;
+    grid-row: 4; /*för att placera den rätt i rätt ruta på griden*/
 }
 
 /*bilder/video*/
 
-#bild{
+#bild{ /*id för att göra en specifik bild mindre*/
     max-width: 30vw;
 }
 
@@ -227,28 +229,28 @@ table{
     border-radius: 20px;
 }
 
-iframe{
+iframe{ /*bestämmer bredd och höjd på youtube videon på nybörjar sidan*/
     width: 560px;
     height: 425px;
 }
 
-.bakgrund{
-    grid-column: 1/3;
-    max-width: 98vw;
+.bakgrund{ /*för bakgrundsbilderna*/
+    grid-column: 1/3; /*placering*/
+    max-width: 98vw; /*tar upp nästan hela bredden, 98 för att undvika en scroll i sidled.*/
     height: 33vw;
     background-color: rgb(36, 36, 36);
     padding: 0;
     border: 0;
 }
 
-img{
+img{ 
     max-width: 50vw;
     padding-right: 5px;
     padding-top: 60px;
 }
 
-.nyhetsbild{
-    margin: auto;
+.nyhetsbild{ 
+    margin: auto; /*för att placera bilden i mitten, ger automatiskt lika mycket margin runt om hela. */
 }
 
 /*formulär*/
@@ -260,12 +262,12 @@ form{
 /*Footer*/
 
  /*typsnitt*/
-@font-face{
+@font-face{ /*nedladdbart typsnitt*/
     font-family: Myfont;
     src:url(/Kod/Fonts/POPPINS-MEDIUMITALIC.TTF)
 }
 /*media queries*/
-@media only screen and (max-width: 426px)
+@media only screen and (max-width: 426px) /*för att ta bort sidonavigationen när det är en mobil användare på sidan*/
 {
    .sidenav{display: none;}
 }

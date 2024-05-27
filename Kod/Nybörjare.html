@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <link href="Style.css" rel="stylesheet" >
     </head>
-    <body class="alt">
+    <body class="alt"> <!--här används en klass för bodyn för att integrera den lokala navigationen på sidan-->
         <header>
             <h1><a href="Index.html">AIcentralen</a></h1>
         </header>
@@ -18,7 +18,7 @@
             </ul>
         </nav>
         <nav class="sidenav">
-            <ul class="lokalmeny"><!--Lokalmeny, länkar till divarna längre ned på sidan genom spec id--> 
+            <ul><!--Lokalmeny, länkar till divarna längre ned på sidan genom spec id--> 
                 <li> <a href="#div1">Lektion 1</a></li>
                 <li> <a href="#div2">Lektion 2</a></li>
                 <li> <a href="#div3">Lektion 3</a></li>
@@ -39,28 +39,33 @@
                 Det finns till exempel AI som är inbyggda i till exempel google som kan hålla koll på din kalender. Det finns även flera mer avancerade AIs som kan underlätta svårare jobb.
                 Nästa uppgift går ut på att först upptäcka ett problem i din vardag och sedan lösa det genom att implementera en existerande AI, du ska alltså inte skapa en egen AI. 
                 Du ska sedan svara på formuläret här under.</p>
-            <form action="Tacksida.html">
+            <form action="Tacksida.html">  <!--elementet form används för att skapa ett formulär, action bestämmer vad som händer när man skickar in formuläret, i detta fallet blir man tagen till en tacksida-->
                 <h4>Utvärdering</h4>
                 <p>Hur gick uppgiften?</p>
-                <input type="radio" name="utvärdering" id="dåligt" value="DÅLIGT">
-                <label for="dåligt">Dåligt</label><br>
+                <input type="radio" name="utvärdering" id="dåligt" value="DÅLIGT"> <!--när radio används kan bara ett av alternativen väljas--> <!--type specifierar vilken typ av input, name används för att lagra datan korrekt, id behövs för label, value handlar också om att lagra datan korrekt-->
+                <label for="dåligt">Dåligt</label><br>  <!--label ger en liten textruta vid sidan av radioknappen, används så att formuläret och texten blir läst tillsammans.  -->
                 <input type="radio" name="utvärdering" id="sådär" value="SÅDÄR">
                 <label for="sådär">Sådär</label><br>
                 <input type="radio" name="utvärdering" id="bra" value="BRA">
                 <label for="bra">Bra</label>
-                <input type="submit" value="Lämna in">
+                <input type="submit" value="Lämna in"> <!--knapp för att skicka in sitt svar-->
             </form>
             <h3 id="div3">Lektion 3</h3>
             <p>Nu ska du få fördjupa dig i AIns historia, till att börja med kan du läsa AIcentralens historia sida. Efter det kan du leta vidare efter information på internet.
                 Du kan också testa fråga en AI om dens egen historia. Detta är viktigt för att få lite bakgrundsfakta kring artificiell intelligens,
-                 vilket du kommer behöva i framtiden när du ska göra mer avancerade saker. </p>
+                 vilket du kommer behöva i framtiden när du ska göra mer avancerade saker. Nedanför finns lite pluggmusik som du kan lyssna på för lite bättre fokus
+            </p>
+            <audio controls> <!--audio används för att integrera en ljudfil på sidan-->
+                <source src="ljud/pluggmusik.mp3" type="audio/mpeg">
+                Din webbläsare stödjer tyvärr inte ljudfilen <!--texten syns bara om ljudfilen ej kan spelas upp-->
+            </audio>
             <form action="Tacksida.html">
                 <h4>Uppgifter</h4>
                 <p>Gör följande uppgifter:</p>
                 <p>1. När kom den första AI:n?</p>
-                <input type="text" name="AI">
+                <input type="text" name="AI"> <!--type=text ger en textruta som man ska svara i-->
                 <p>2. Vem/Vilka är viktiga personer inom AI historia?</p>
-                <input type="checkbox" name="Andrew"id="1">
+                <input type="checkbox" name="Andrew"id="1"> <!-- när checkbox används kan man välja flera av svaren-->
                 <label for="1">Andrew Garfield</label>
                 <input type="checkbox" name="Sam"id="2">
                 <label for="2">Sam Altman</label>
@@ -69,16 +74,17 @@
                 <p>3. Sammanfatta  AI:ns historia på 4 meningar</p>
                 <input type="textarea" name="sammanfattning" id="4">
                 <p>Skriv nu in ditt lösenord för att kunna skicka in svaren</p>
-                <input type="password" name="lösenord" id="5">
+                <input type="password" name="lösenord" id="5">  <!--password specifierar att det är ett lösenord som ska skrivas här-->
                 <input type="submit" value="Lämna in">
             
             </form>
             <h3 id="div4">Lektion 4</h3>
             <p>Välkommen till den sista lektionen som nybörjare. Idag så ska du kolla på filmklippet nedan. Det kommer att ge dig väldigt användbar 
                 information inför framtiden så se till att lyssna noga.</p>
-            <iframe src="https://www.youtube.com/embed/-J3YJxNnzDc?si=it15xIEbKr_U_k4N" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>Detviktigaste du bör ha lärt dig idag:</h3>
-            <ol>
+            <iframe src="https://www.youtube.com/embed/-J3YJxNnzDc?si=it15xIEbKr_U_k4N" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--iframe använvds för att integrera en youtube video på sidan, src står för source alltså var videon kommer ifrån, allow avnänvds för att bestämma vad som får användas i videospelaren -->
+            <h3>Det viktigaste du bör ha lärt dig idag:</h3>
+            <ol> <!-- numrerad lista-->
                 <li><p>1. Chat-gpt3s begränsnignar</p></li>
                 <li><p>2. Hur man kan förbättra sin vardag med AI</p></li>
                 <li><p>3. Lite om AIns historia</p></li>

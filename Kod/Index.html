@@ -1,32 +1,32 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html> <!--bestämmer dokumentypen, html-->
+<html lang="sv"> <!--specifierar språket i dokumentet-->
     <head>
-        <title>AIcentralen</title>
-        <meta charset="utf-8">
-        <link href="Style.css" rel="stylesheet" >
+        <title>AIcentralen</title> <!--dokumentets/sidans namn -->
+        <meta charset="utf-8"> <!--för att bestämma vilken teckenkodning som används på sidan, UTF-8 bör alltid användas då den är standard-->
+        <link href="Style.css" rel="stylesheet" > <!--"kopplar ihop" css filen och html dokumentet. behövs för att applicera css-->
     </head>
-    <body class="wrapper">
+    <body> <!--här början den visuella sidan-->
         <header>
-            <h1><a href="Index.html">AIcentralen</a></h1>
+            <h1><a href="Index.html">AIcentralen</a></h1> <!--en rubrik där det står AICentralen, a href gör så att man kommer tillbaks till index sidan när man klickar på den-->
         </header>
-        <nav>
-            <ul>
-                <li><a href="Historia.html">Histora</a></li>
+        <nav> <!--navigations meny -->
+            <ul> <!--ul används då det inte är en numrerad lista-->
+                <li><a href="Historia.html">Histora</a></li> <!--länkarna i list elementen länkar till de olika sidorna på webbplatsen-->
                 <li><a href="Nyheter.html">Nyheter</a></li>
                 <li><a href="Tutorial.html">Tutorials</a></li>
                 <li><a href="Kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-        <main>
-            <img class="bakgrund" src="bilder/Aichip.png" alt="bild på en blå hjärna med blå kod i bakgrunden">
-            <h2>Vad är AI?</h2>
+        <main> <!--main används för huvud innehållet på sidan-->
+            <img class="bakgrund" src="bilder/Aichip.png" alt="bild på ett datorchip men en hjärna där det står Ai på"> <!--img används för bilder, src visar var bilden ligger på datorn och alt ger en text som förklarar bilden om den inte laddas eller om det är en användare med nedsatt syn-->
+            <h2>Vad är AI?</h2> <!--En rubrik, något mindre än h1. -->
             <img id="bild" src="bilder/artificial-intelligence-new-technology-science-futuristic-abstract-human-brain-ai-technology-cpu-central-processor-unit-chipset-big-data-machine-learning-cyber-mind-domination-generative-ai-scaled-1.jpg" alt="">
-            <p> Hej och välkommen till AIcentralen, Det perfekta stället för att lära sig lite mer om AI. AIcentralen är grundad av Adam Fredriksson
+            <p> Hej och välkommen till AIcentralen, Det perfekta stället för att lära sig lite mer om AI. AIcentralen är grundad av Adam Fredriksson  <!--p används för text, här får man alltså lite brödtext för sidan-->
                 men drivs idag fullständigt automatiskt av en AI. Sidan startade 2015 och har sedan dess växt till att bli Sveriges största AI hemsida.
                 
             </p>
         </main>
-        <footer>
+        <footer> <!--footer har man alltid längst ned på sidan, visar att sidan är slut.-->
             <p>AIcentralen all rights reserved</p>
         </footer>
     </body>
